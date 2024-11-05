@@ -12,18 +12,24 @@ function removeAds() {
     // Second ad - Full screen mode
     const ad2 = document.querySelector('.c1y04zgv');
     if (ad2) {
-        const mainAd = ad2.querySelector('.a1md05wj');
-        if (mainAd) {
-            mainAd.remove();
+        const ad = ad2.querySelector('.a1md05wj');
+        if (ad) {
+            ad.remove();
         }
     }
 
     // Third ad - Above the footer
-    const ad3 = document.querySelector('.fuq537y');
+    const ad3 = document.querySelector('.SetPageEmbeddedAd-wrapper');
     if (ad3) {
-        const mainAd = ad3.querySelector('.TimeAndVisibilityAd');
-        if (mainAd) {
-            mainAd.remove();
+        ad3.remove();
+    }
+
+    // Fourth ad - Above the footer
+    const ad4 = document.querySelector('.fuq537y');
+    if (ad4) {
+        const ad = ad4.querySelector('.TimeAndVisibilityAd');
+        if (ad) {
+            ad.remove();
         }
     }
 }
